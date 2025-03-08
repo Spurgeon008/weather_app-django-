@@ -3,7 +3,7 @@ import requests
 
 def get_weather(request):
     city = request.GET.get('city', 'New York')  
-    api_key = "9290644557db78227d3e26b24e99a42b"
+    api_key = "" # fill up the API i deleted mine for security purpose
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
     try:
